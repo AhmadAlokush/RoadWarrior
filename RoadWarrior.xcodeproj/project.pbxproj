@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11C69FCA184A5049008069A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FC9184A5049008069A6 /* Foundation.framework */; };
+		11C69FCC184A5049008069A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FCB184A5049008069A6 /* CoreGraphics.framework */; };
+		11C69FCE184A5049008069A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FCD184A5049008069A6 /* UIKit.framework */; };
+		11C69FD4184A5049008069A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C69FD2184A5049008069A6 /* InfoPlist.strings */; };
+		11C69FD6184A5049008069A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C69FD5184A5049008069A6 /* main.m */; };
+		11C69FDA184A5049008069A6 /* AhmAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C69FD9184A5049008069A6 /* AhmAppDelegate.m */; };
+		11C69FDD184A5049008069A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C69FDB184A5049008069A6 /* Main.storyboard */; };
+		11C69FE0184A5049008069A6 /* AhmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C69FDF184A5049008069A6 /* AhmViewController.m */; };
+		11C69FE2184A5049008069A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C69FE1184A5049008069A6 /* Images.xcassets */; };
+		11C69FE9184A5049008069A6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FE8184A5049008069A6 /* XCTest.framework */; };
+		11C69FEA184A5049008069A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FC9184A5049008069A6 /* Foundation.framework */; };
+		11C69FEB184A5049008069A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FCD184A5049008069A6 /* UIKit.framework */; };
+		11C69FF3184A5049008069A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C69FF1184A5049008069A6 /* InfoPlist.strings */; };
+		11C69FF5184A5049008069A6 /* RoadWarriorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C69FF4184A5049008069A6 /* RoadWarriorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11C69FEC184A5049008069A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11C69FBE184A5049008069A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11C69FC5184A5049008069A6;
+			remoteInfo = RoadWarrior;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11C69FC6184A5049008069A6 /* RoadWarrior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadWarrior.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C69FC9184A5049008069A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		11C69FCB184A5049008069A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		11C69FCD184A5049008069A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		11C69FD1184A5049008069A6 /* RoadWarrior-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoadWarrior-Info.plist"; sourceTree = "<group>"; };
+		11C69FD3184A5049008069A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11C69FD5184A5049008069A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11C69FD7184A5049008069A6 /* RoadWarrior-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoadWarrior-Prefix.pch"; sourceTree = "<group>"; };
+		11C69FD8184A5049008069A6 /* AhmAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AhmAppDelegate.h; sourceTree = "<group>"; };
+		11C69FD9184A5049008069A6 /* AhmAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AhmAppDelegate.m; sourceTree = "<group>"; };
+		11C69FDC184A5049008069A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11C69FDE184A5049008069A6 /* AhmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AhmViewController.h; sourceTree = "<group>"; };
+		11C69FDF184A5049008069A6 /* AhmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AhmViewController.m; sourceTree = "<group>"; };
+		11C69FE1184A5049008069A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		11C69FE7184A5049008069A6 /* RoadWarriorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadWarriorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C69FE8184A5049008069A6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		11C69FF0184A5049008069A6 /* RoadWarriorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoadWarriorTests-Info.plist"; sourceTree = "<group>"; };
+		11C69FF2184A5049008069A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11C69FF4184A5049008069A6 /* RoadWarriorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadWarriorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11C69FC3184A5049008069A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C69FCC184A5049008069A6 /* CoreGraphics.framework in Frameworks */,
+				11C69FCE184A5049008069A6 /* UIKit.framework in Frameworks */,
+				11C69FCA184A5049008069A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C69FE4184A5049008069A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C69FE9184A5049008069A6 /* XCTest.framework in Frameworks */,
+				11C69FEB184A5049008069A6 /* UIKit.framework in Frameworks */,
+				11C69FEA184A5049008069A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11C69FBD184A5049008069A6 = {
+			isa = PBXGroup;
+			children = (
+				11C69FCF184A5049008069A6 /* RoadWarrior */,
+				11C69FEE184A5049008069A6 /* RoadWarriorTests */,
+				11C69FC8184A5049008069A6 /* Frameworks */,
+				11C69FC7184A5049008069A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11C69FC7184A5049008069A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11C69FC6184A5049008069A6 /* RoadWarrior.app */,
+				11C69FE7184A5049008069A6 /* RoadWarriorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11C69FC8184A5049008069A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11C69FC9184A5049008069A6 /* Foundation.framework */,
+				11C69FCB184A5049008069A6 /* CoreGraphics.framework */,
+				11C69FCD184A5049008069A6 /* UIKit.framework */,
+				11C69FE8184A5049008069A6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11C69FCF184A5049008069A6 /* RoadWarrior */ = {
+			isa = PBXGroup;
+			children = (
+				11C69FD8184A5049008069A6 /* AhmAppDelegate.h */,
+				11C69FD9184A5049008069A6 /* AhmAppDelegate.m */,
+				11C69FDB184A5049008069A6 /* Main.storyboard */,
+				11C69FDE184A5049008069A6 /* AhmViewController.h */,
+				11C69FDF184A5049008069A6 /* AhmViewController.m */,
+				11C69FE1184A5049008069A6 /* Images.xcassets */,
+				11C69FD0184A5049008069A6 /* Supporting Files */,
+			);
+			path = RoadWarrior;
+			sourceTree = "<group>";
+		};
+		11C69FD0184A5049008069A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11C69FD1184A5049008069A6 /* RoadWarrior-Info.plist */,
+				11C69FD2184A5049008069A6 /* InfoPlist.strings */,
+				11C69FD5184A5049008069A6 /* main.m */,
+				11C69FD7184A5049008069A6 /* RoadWarrior-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11C69FEE184A5049008069A6 /* RoadWarriorTests */ = {
+			isa = PBXGroup;
+			children = (
+				11C69FF4184A5049008069A6 /* RoadWarriorTests.m */,
+				11C69FEF184A5049008069A6 /* Supporting Files */,
+			);
+			path = RoadWarriorTests;
+			sourceTree = "<group>";
+		};
+		11C69FEF184A5049008069A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11C69FF0184A5049008069A6 /* RoadWarriorTests-Info.plist */,
+				11C69FF1184A5049008069A6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11C69FC5184A5049008069A6 /* RoadWarrior */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C69FF8184A5049008069A6 /* Build configuration list for PBXNativeTarget "RoadWarrior" */;
+			buildPhases = (
+				11C69FC2184A5049008069A6 /* Sources */,
+				11C69FC3184A5049008069A6 /* Frameworks */,
+				11C69FC4184A5049008069A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoadWarrior;
+			productName = RoadWarrior;
+			productReference = 11C69FC6184A5049008069A6 /* RoadWarrior.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11C69FE6184A5049008069A6 /* RoadWarriorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C69FFB184A5049008069A6 /* Build configuration list for PBXNativeTarget "RoadWarriorTests" */;
+			buildPhases = (
+				11C69FE3184A5049008069A6 /* Sources */,
+				11C69FE4184A5049008069A6 /* Frameworks */,
+				11C69FE5184A5049008069A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11C69FED184A5049008069A6 /* PBXTargetDependency */,
+			);
+			name = RoadWarriorTests;
+			productName = RoadWarriorTests;
+			productReference = 11C69FE7184A5049008069A6 /* RoadWarriorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11C69FBE184A5049008069A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Ahm;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Ahmadeus;
+				TargetAttributes = {
+					11C69FE6184A5049008069A6 = {
+						TestTargetID = 11C69FC5184A5049008069A6;
+					};
+				};
+			};
+			buildConfigurationList = 11C69FC1184A5049008069A6 /* Build configuration list for PBXProject "RoadWarrior" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11C69FBD184A5049008069A6;
+			productRefGroup = 11C69FC7184A5049008069A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11C69FC5184A5049008069A6 /* RoadWarrior */,
+				11C69FE6184A5049008069A6 /* RoadWarriorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11C69FC4184A5049008069A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C69FE2184A5049008069A6 /* Images.xcassets in Resources */,
+				11C69FD4184A5049008069A6 /* InfoPlist.strings in Resources */,
+				11C69FDD184A5049008069A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C69FE5184A5049008069A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C69FF3184A5049008069A6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11C69FC2184A5049008069A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C69FD6184A5049008069A6 /* main.m in Sources */,
+				11C69FE0184A5049008069A6 /* AhmViewController.m in Sources */,
+				11C69FDA184A5049008069A6 /* AhmAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C69FE3184A5049008069A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C69FF5184A5049008069A6 /* RoadWarriorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11C69FED184A5049008069A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11C69FC5184A5049008069A6 /* RoadWarrior */;
+			targetProxy = 11C69FEC184A5049008069A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11C69FD2184A5049008069A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11C69FD3184A5049008069A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		11C69FDB184A5049008069A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11C69FDC184A5049008069A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11C69FF1184A5049008069A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11C69FF2184A5049008069A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11C69FF6184A5049008069A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11C69FF7184A5049008069A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11C69FF9184A5049008069A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoadWarrior/RoadWarrior-Prefix.pch";
+				INFOPLIST_FILE = "RoadWarrior/RoadWarrior-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		11C69FFA184A5049008069A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoadWarrior/RoadWarrior-Prefix.pch";
+				INFOPLIST_FILE = "RoadWarrior/RoadWarrior-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		11C69FFC184A5049008069A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RoadWarrior.app/RoadWarrior";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoadWarrior/RoadWarrior-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RoadWarriorTests/RoadWarriorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		11C69FFD184A5049008069A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RoadWarrior.app/RoadWarrior";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoadWarrior/RoadWarrior-Prefix.pch";
+				INFOPLIST_FILE = "RoadWarriorTests/RoadWarriorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11C69FC1184A5049008069A6 /* Build configuration list for PBXProject "RoadWarrior" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C69FF6184A5049008069A6 /* Debug */,
+				11C69FF7184A5049008069A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C69FF8184A5049008069A6 /* Build configuration list for PBXNativeTarget "RoadWarrior" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C69FF9184A5049008069A6 /* Debug */,
+				11C69FFA184A5049008069A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		11C69FFB184A5049008069A6 /* Build configuration list for PBXNativeTarget "RoadWarriorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C69FFC184A5049008069A6 /* Debug */,
+				11C69FFD184A5049008069A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11C69FBE184A5049008069A6 /* Project object */;
+}
