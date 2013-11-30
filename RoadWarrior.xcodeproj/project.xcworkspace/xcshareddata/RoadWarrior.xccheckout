@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>39B52917-9EC5-40A7-966C-924B72F15F04</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RoadWarrior</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>047E9F29-63AD-4AAE-9D92-198DE9EFA6CA</key>
+		<string>https://github.com/AhmadAlokush/RoadWarrior.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RoadWarrior.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>047E9F29-63AD-4AAE-9D92-198DE9EFA6CA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AhmadAlokush/RoadWarrior.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>047E9F29-63AD-4AAE-9D92-198DE9EFA6CA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>047E9F29-63AD-4AAE-9D92-198DE9EFA6CA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RoadWarrior</string>
+		</dict>
+	</array>
+</dict>
+</plist>

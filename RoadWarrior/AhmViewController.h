@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AhmViewController : UIViewController
+
+@interface AhmViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate> {
+   UITableView *autocompleteCarMake;
+   UITableView *autocompleteCarModel;
+}
+
+@property (nonatomic, retain) UITableView *autocompleteCarMake;
+@property (nonatomic, retain) UITableView *autocompleteCarModel;
+
+- (void)searchAutocompleteEntriesWithSubstring:(NSString *)substring;
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110389C3184A66CE0079690C /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 110389C2184A66CE0079690C /* GameEngine.m */; };
+		114EB564184A63A400BC00D2 /* thememusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 114EB563184A63A400BC00D2 /* thememusic.mp3 */; };
 		11C69FCA184A5049008069A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FC9184A5049008069A6 /* Foundation.framework */; };
 		11C69FCC184A5049008069A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FCB184A5049008069A6 /* CoreGraphics.framework */; };
 		11C69FCE184A5049008069A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FCD184A5049008069A6 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110389C1184A66CE0079690C /* GameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEngine.h; sourceTree = "<group>"; };
+		110389C2184A66CE0079690C /* GameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEngine.m; sourceTree = "<group>"; };
+		114EB563184A63A400BC00D2 /* thememusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thememusic.mp3; sourceTree = "<group>"; };
 		11C69FC6184A5049008069A6 /* RoadWarrior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadWarrior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C69FC9184A5049008069A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11C69FCB184A5049008069A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +120,8 @@
 				11C69FD8184A5049008069A6 /* AhmAppDelegate.h */,
 				11C69FD9184A5049008069A6 /* AhmAppDelegate.m */,
 				11C69FDB184A5049008069A6 /* Main.storyboard */,
+				110389C1184A66CE0079690C /* GameEngine.h */,
+				110389C2184A66CE0079690C /* GameEngine.m */,
 				11C69FDE184A5049008069A6 /* AhmViewController.h */,
 				11C69FDF184A5049008069A6 /* AhmViewController.m */,
 				11C69FE1184A5049008069A6 /* Images.xcassets */,
@@ -126,6 +133,7 @@
 		11C69FD0184A5049008069A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				114EB563184A63A400BC00D2 /* thememusic.mp3 */,
 				11C69FD1184A5049008069A6 /* RoadWarrior-Info.plist */,
 				11C69FD2184A5049008069A6 /* InfoPlist.strings */,
 				11C69FD5184A5049008069A6 /* main.m */,
@@ -229,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114EB564184A63A400BC00D2 /* thememusic.mp3 in Resources */,
 				11C69FE2184A5049008069A6 /* Images.xcassets in Resources */,
 				11C69FD4184A5049008069A6 /* InfoPlist.strings in Resources */,
 				11C69FDD184A5049008069A6 /* Main.storyboard in Resources */,
@@ -253,6 +262,7 @@
 				11C69FD6184A5049008069A6 /* main.m in Sources */,
 				11C69FE0184A5049008069A6 /* AhmViewController.m in Sources */,
 				11C69FDA184A5049008069A6 /* AhmAppDelegate.m in Sources */,
+				110389C3184A66CE0079690C /* GameEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +471,7 @@
 				11C69FFA184A5049008069A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11C69FFB184A5049008069A6 /* Build configuration list for PBXNativeTarget "RoadWarriorTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +480,7 @@
 				11C69FFD184A5049008069A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
