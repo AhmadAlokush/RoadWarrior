@@ -10,4 +10,7 @@
 
 @interface DetailsVC : UIViewController
 
+- (void)SetupVC:(NSString *) DataPoint;
+@property (weak, nonatomic) IBOutlet UITextView *txtDescription;
+
 @end

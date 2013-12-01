@@ -9,17 +9,15 @@
 #import <UIKit/UIKit.h>
 
 
-@interface AhmViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate> {
-   UITableView *autocompleteCarMake;
-   UITableView *autocompleteCarModel;
-}
+@interface AhmViewController : UIViewController <UITextFieldDelegate> {
 
-@property (nonatomic, retain) UITableView *autocompleteCarMake;
-@property (nonatomic, retain) UITableView *autocompleteCarModel;
+}
 
 - (void)searchAutocompleteEntriesWithSubstring:(NSString *)substring;
 - (IBAction)goClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *txtChooseYourDestiny;
 @property (weak, nonatomic) IBOutlet UITextField *txtTheVoid;
+@property (weak, nonatomic) IBOutlet UILabel *lblVehicleModel;
+@property (weak, nonatomic) IBOutlet UIButton *btnGo;
 
 @end

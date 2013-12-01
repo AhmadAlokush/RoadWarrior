@@ -9,6 +9,7 @@
 #import "GameEngine.h"
 
 @implementation GameEngine
+NSPredicate *predicate;
 
 + (GameEngine *)engine
 {
@@ -25,6 +26,7 @@
    if(self) {
       NSURLSessionConfiguration *config = [NSURLSessionConfiguration ephemeralSessionConfiguration];
       session = [NSURLSession sessionWithConfiguration:config];
+      predicate = [NSPredicate predicateWithFormat:@"TRUEPREDICATE"];
       [self loadData];
       [self playTheme];
    }
@@ -33,49 +35,62 @@
 
 
 - (void)loadData {
-   NSURL *url = [NSURL URLWithString:@""];
+   NSURL *url = [NSURL URLWithString:@"http://road-warrior.herokuapp.com/makes"];
    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
    [[session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
       if (!error) {
          NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
          if (httpResp.statusCode == 200) {
             NSError *jsonError;
-            NSDictionary *carMakeJSON =
-            [NSJSONSerialization JSONObjectWithData:data
-                                            options:NSJSONReadingAllowFragments
-                                              error:&jsonError];
             carMakes = [[NSMutableArray alloc] init];
-            if (!jsonError) {
-               carMakes = carMakeJSON[@"contents"];
-            }
+            carMakes =      [NSJSONSerialization JSONObjectWithData:data
+                                                             options:NSJSONReadingAllowFragments
+                                                               error:&jsonError];
          }
       }
    }] resume];
 }
 
 - (void)LoadCarModels:(NSString *) CarMake {
-   NSURL *url = [NSURL URLWithString:@""];
+   NSURL *url = [NSURL URLWithString:@"http://road-warrior.herokuapp.com/models/audi"];
    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
    [[session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
       if (!error) {
          NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
          if (httpResp.statusCode == 200) {
             NSError *jsonError;
-            NSDictionary *carMakeJSON =
+            carModels = [[NSMutableArray alloc] init];
+            carModels =
             [NSJSONSerialization JSONObjectWithData:data
                                             options:NSJSONReadingAllowFragments
                                               error:&jsonError];
-            carModels = [[NSMutableArray alloc] init];
-            if (!jsonError) {
-               carModels = carMakeJSON[@"contents"];
-            }
+            
          }
       }
    }] resume];
 }
 
+- (void)BuildPredicate:(NSString *) searchText {
+   predicate =  [NSPredicate predicateWithFormat:@" SELF BEGINSWITH  %@", searchText.lowercaseString];
+}
+
 - (void)LoadAverages:(NSString *) CarInfo {
-   
+   NSURL *url = [NSURL URLWithString:@"http://road-warrior.herokuapp.com/averages/audi/a4"];
+   [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+   [[session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+      if (!error) {
+         NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
+         if (httpResp.statusCode == 200) {
+            NSError *jsonError;
+            averages = [[NSMutableArray alloc] init];
+            averages =
+            [NSJSONSerialization JSONObjectWithData:data
+                                            options:NSJSONReadingAllowFragments
+                                              error:&jsonError];
+            
+         }
+      }
+   }] resume];
 }
 
 - (void)playSoundEffect:(NSString *) SFXName {
@@ -87,19 +102,25 @@
    player.numberOfLoops = 0;
    player.delegate = self;
    if (player == nil) {
-		NSLog([error debugDescription]);
+		NSLog([error description]);
    }
 	else {
          //;[player play];
    }
 }
 
-- (NSMutableArray *)CarMakes {
-   return carMakes;
+- (NSString *)CarMake {
+   if ([[carMakes filteredArrayUsingPredicate:predicate] count] > 1) {
+      return [[carMakes filteredArrayUsingPredicate:predicate] objectAtIndex:0];
+   }
+   return @"";
 }
 
-- (NSMutableArray *)CarModels {
-   return carModels;
+- (NSString *)CarModel {
+   if ([[carModels filteredArrayUsingPredicate:predicate] count] > 1) {
+      return [[carModels filteredArrayUsingPredicate:predicate] objectAtIndex:0];
+   }
+   return @"";
 }
 
 - (void)playTheme {

@@ -7,6 +7,7 @@
 //
 
 #import "GuideanceVC.h"
+#import "DetailsVC.h"
 
 @interface GuideanceVC ()
 
@@ -33,6 +34,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+   [[segue destinationViewController] SetupVC:[segue identifier]];
+  
 }
 
 @end

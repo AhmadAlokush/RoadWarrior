@@ -12,6 +12,7 @@
 @interface GameEngine : NSObject <AVAudioPlayerDelegate> {
    NSMutableArray *carMakes;
    NSMutableArray *carModels;
+   NSMutableArray *averages;
    AVAudioPlayer *player;
    NSURLSession *session;
 }
@@ -20,6 +21,7 @@
 - (void)playSoundEffect:(NSString *) SFXName;
 - (void)LoadCarModels:(NSString *) CarMake;
 - (void)LoadAverages:(NSString *) CarInfo;
-- (NSMutableArray *)CarMakes;
-- (NSMutableArray *)CarModels;
+- (NSString *)CarMake;
+- (NSString *)CarModel;
+- (void)BuildPredicate:(NSString *) searchText;
 @end

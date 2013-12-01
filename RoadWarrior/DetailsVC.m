@@ -35,4 +35,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)SetupVC:(NSString *) DataPoint {
+   if ([DataPoint isEqualToString:@"rpm"]) {
+      [self.txtDescription setText:@"Drivers Achieved the best performance when commiting to an rpm below that"];
+   }
+   else if ([DataPoint isEqualToString:@"speed"]) {
+      [self.txtDescription setText:@"Drivers Achieved the best performance when commiting to a speed below that"];
+   }
+   else if ([DataPoint isEqualToString:@"mpg"]) {
+          [self.txtDescription setText:@"Drivers Achieved the best performance when commiting to an mpg below that"];
+   }
+
+}
+
 @end
