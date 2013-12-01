@@ -12,6 +12,8 @@
 		115FEB57184A813100B4B4A6 /* ChooseYourDestiny.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 115FEB56184A813100B4B4A6 /* ChooseYourDestiny.mp3 */; };
 		115FEB59184A827600B4B4A6 /* ColdIsTheVoid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 115FEB58184A827600B4B4A6 /* ColdIsTheVoid.mp3 */; };
 		115FEB5C184ABFA300B4B4A6 /* CharacterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FEB5B184ABFA300B4B4A6 /* CharacterVC.m */; };
+		115FEB5F184ACD9400B4B4A6 /* GuideanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FEB5E184ACD9400B4B4A6 /* GuideanceVC.m */; };
+		115FEB62184ACDE100B4B4A6 /* DetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FEB61184ACDE100B4B4A6 /* DetailsVC.m */; };
 		11724491184A742300CC5A2F /* CarColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11724490184A742300CC5A2F /* CarColorViewController.m */; };
 		11724494184A755300CC5A2F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 11724493184A755300CC5A2F /* SVProgressHUD.m */; };
 		11724496184A7B5B00CC5A2F /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 11724495184A7B5B00CC5A2F /* Logo.png */; };
@@ -49,6 +51,10 @@
 		115FEB58184A827600B4B4A6 /* ColdIsTheVoid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ColdIsTheVoid.mp3; sourceTree = "<group>"; };
 		115FEB5A184ABFA300B4B4A6 /* CharacterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterVC.h; sourceTree = "<group>"; };
 		115FEB5B184ABFA300B4B4A6 /* CharacterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterVC.m; sourceTree = "<group>"; };
+		115FEB5D184ACD9400B4B4A6 /* GuideanceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideanceVC.h; sourceTree = "<group>"; };
+		115FEB5E184ACD9400B4B4A6 /* GuideanceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideanceVC.m; sourceTree = "<group>"; };
+		115FEB60184ACDE100B4B4A6 /* DetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsVC.h; sourceTree = "<group>"; };
+		115FEB61184ACDE100B4B4A6 /* DetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsVC.m; sourceTree = "<group>"; };
 		1172448F184A742300CC5A2F /* CarColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarColorViewController.h; sourceTree = "<group>"; };
 		11724490184A742300CC5A2F /* CarColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarColorViewController.m; sourceTree = "<group>"; };
 		11724492184A755300CC5A2F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
@@ -145,6 +151,10 @@
 				11724490184A742300CC5A2F /* CarColorViewController.m */,
 				115FEB5A184ABFA300B4B4A6 /* CharacterVC.h */,
 				115FEB5B184ABFA300B4B4A6 /* CharacterVC.m */,
+				115FEB5D184ACD9400B4B4A6 /* GuideanceVC.h */,
+				115FEB5E184ACD9400B4B4A6 /* GuideanceVC.m */,
+				115FEB60184ACDE100B4B4A6 /* DetailsVC.h */,
+				115FEB61184ACDE100B4B4A6 /* DetailsVC.m */,
 				11C69FE1184A5049008069A6 /* Images.xcassets */,
 				11C69FD0184A5049008069A6 /* Supporting Files */,
 			);
@@ -286,12 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115FEB62184ACDE100B4B4A6 /* DetailsVC.m in Sources */,
 				11C69FD6184A5049008069A6 /* main.m in Sources */,
 				11C69FE0184A5049008069A6 /* AhmViewController.m in Sources */,
 				11C69FDA184A5049008069A6 /* AhmAppDelegate.m in Sources */,
 				11724491184A742300CC5A2F /* CarColorViewController.m in Sources */,
 				115FEB5C184ABFA300B4B4A6 /* CharacterVC.m in Sources */,
 				110389C3184A66CE0079690C /* GameEngine.m in Sources */,
+				115FEB5F184ACD9400B4B4A6 /* GuideanceVC.m in Sources */,
 				11724494184A755300CC5A2F /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

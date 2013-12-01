@@ -23,6 +23,8 @@
 - (id)init {
    self = [super init];
    if(self) {
+      NSURLSessionConfiguration *config = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+      session = [NSURLSession sessionWithConfiguration:config];
       [self loadData];
       [self playTheme];
    }
@@ -31,6 +33,48 @@
 
 
 - (void)loadData {
+   NSURL *url = [NSURL URLWithString:@""];
+   [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+   [[session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+      if (!error) {
+         NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
+         if (httpResp.statusCode == 200) {
+            NSError *jsonError;
+            NSDictionary *carMakeJSON =
+            [NSJSONSerialization JSONObjectWithData:data
+                                            options:NSJSONReadingAllowFragments
+                                              error:&jsonError];
+            carMakes = [[NSMutableArray alloc] init];
+            if (!jsonError) {
+               carMakes = carMakeJSON[@"contents"];
+            }
+         }
+      }
+   }] resume];
+}
+
+- (void)LoadCarModels:(NSString *) CarMake {
+   NSURL *url = [NSURL URLWithString:@""];
+   [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+   [[session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+      if (!error) {
+         NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
+         if (httpResp.statusCode == 200) {
+            NSError *jsonError;
+            NSDictionary *carMakeJSON =
+            [NSJSONSerialization JSONObjectWithData:data
+                                            options:NSJSONReadingAllowFragments
+                                              error:&jsonError];
+            carModels = [[NSMutableArray alloc] init];
+            if (!jsonError) {
+               carModels = carMakeJSON[@"contents"];
+            }
+         }
+      }
+   }] resume];
+}
+
+- (void)LoadAverages:(NSString *) CarInfo {
    
 }
 
@@ -48,6 +92,14 @@
 	else {
          //;[player play];
    }
+}
+
+- (NSMutableArray *)CarMakes {
+   return carMakes;
+}
+
+- (NSMutableArray *)CarModels {
+   return carModels;
 }
 
 - (void)playTheme {

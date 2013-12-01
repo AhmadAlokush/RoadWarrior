@@ -13,8 +13,13 @@
    NSMutableArray *carMakes;
    NSMutableArray *carModels;
    AVAudioPlayer *player;
+   NSURLSession *session;
 }
 
 + (GameEngine *)engine;
 - (void)playSoundEffect:(NSString *) SFXName;
+- (void)LoadCarModels:(NSString *) CarMake;
+- (void)LoadAverages:(NSString *) CarInfo;
+- (NSMutableArray *)CarMakes;
+- (NSMutableArray *)CarModels;
 @end
