@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		110389C3184A66CE0079690C /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 110389C2184A66CE0079690C /* GameEngine.m */; };
 		114EB564184A63A400BC00D2 /* thememusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 114EB563184A63A400BC00D2 /* thememusic.mp3 */; };
+		115FEB57184A813100B4B4A6 /* ChooseYourDestiny.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 115FEB56184A813100B4B4A6 /* ChooseYourDestiny.mp3 */; };
+		115FEB59184A827600B4B4A6 /* ColdIsTheVoid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 115FEB58184A827600B4B4A6 /* ColdIsTheVoid.mp3 */; };
+		115FEB5C184ABFA300B4B4A6 /* CharacterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FEB5B184ABFA300B4B4A6 /* CharacterVC.m */; };
+		11724491184A742300CC5A2F /* CarColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11724490184A742300CC5A2F /* CarColorViewController.m */; };
+		11724494184A755300CC5A2F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 11724493184A755300CC5A2F /* SVProgressHUD.m */; };
+		11724496184A7B5B00CC5A2F /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 11724495184A7B5B00CC5A2F /* Logo.png */; };
 		11C69FCA184A5049008069A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FC9184A5049008069A6 /* Foundation.framework */; };
 		11C69FCC184A5049008069A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FCB184A5049008069A6 /* CoreGraphics.framework */; };
 		11C69FCE184A5049008069A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C69FCD184A5049008069A6 /* UIKit.framework */; };
@@ -39,6 +45,15 @@
 		110389C1184A66CE0079690C /* GameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEngine.h; sourceTree = "<group>"; };
 		110389C2184A66CE0079690C /* GameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEngine.m; sourceTree = "<group>"; };
 		114EB563184A63A400BC00D2 /* thememusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thememusic.mp3; sourceTree = "<group>"; };
+		115FEB56184A813100B4B4A6 /* ChooseYourDestiny.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ChooseYourDestiny.mp3; sourceTree = "<group>"; };
+		115FEB58184A827600B4B4A6 /* ColdIsTheVoid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ColdIsTheVoid.mp3; sourceTree = "<group>"; };
+		115FEB5A184ABFA300B4B4A6 /* CharacterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterVC.h; sourceTree = "<group>"; };
+		115FEB5B184ABFA300B4B4A6 /* CharacterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterVC.m; sourceTree = "<group>"; };
+		1172448F184A742300CC5A2F /* CarColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarColorViewController.h; sourceTree = "<group>"; };
+		11724490184A742300CC5A2F /* CarColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarColorViewController.m; sourceTree = "<group>"; };
+		11724492184A755300CC5A2F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		11724493184A755300CC5A2F /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		11724495184A7B5B00CC5A2F /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		11C69FC6184A5049008069A6 /* RoadWarrior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadWarrior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C69FC9184A5049008069A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11C69FCB184A5049008069A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +132,8 @@
 		11C69FCF184A5049008069A6 /* RoadWarrior */ = {
 			isa = PBXGroup;
 			children = (
+				11724492184A755300CC5A2F /* SVProgressHUD.h */,
+				11724493184A755300CC5A2F /* SVProgressHUD.m */,
 				11C69FD8184A5049008069A6 /* AhmAppDelegate.h */,
 				11C69FD9184A5049008069A6 /* AhmAppDelegate.m */,
 				11C69FDB184A5049008069A6 /* Main.storyboard */,
@@ -124,6 +141,10 @@
 				110389C2184A66CE0079690C /* GameEngine.m */,
 				11C69FDE184A5049008069A6 /* AhmViewController.h */,
 				11C69FDF184A5049008069A6 /* AhmViewController.m */,
+				1172448F184A742300CC5A2F /* CarColorViewController.h */,
+				11724490184A742300CC5A2F /* CarColorViewController.m */,
+				115FEB5A184ABFA300B4B4A6 /* CharacterVC.h */,
+				115FEB5B184ABFA300B4B4A6 /* CharacterVC.m */,
 				11C69FE1184A5049008069A6 /* Images.xcassets */,
 				11C69FD0184A5049008069A6 /* Supporting Files */,
 			);
@@ -133,7 +154,10 @@
 		11C69FD0184A5049008069A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11724495184A7B5B00CC5A2F /* Logo.png */,
 				114EB563184A63A400BC00D2 /* thememusic.mp3 */,
+				115FEB58184A827600B4B4A6 /* ColdIsTheVoid.mp3 */,
+				115FEB56184A813100B4B4A6 /* ChooseYourDestiny.mp3 */,
 				11C69FD1184A5049008069A6 /* RoadWarrior-Info.plist */,
 				11C69FD2184A5049008069A6 /* InfoPlist.strings */,
 				11C69FD5184A5049008069A6 /* main.m */,
@@ -238,7 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				114EB564184A63A400BC00D2 /* thememusic.mp3 in Resources */,
+				115FEB59184A827600B4B4A6 /* ColdIsTheVoid.mp3 in Resources */,
 				11C69FE2184A5049008069A6 /* Images.xcassets in Resources */,
+				11724496184A7B5B00CC5A2F /* Logo.png in Resources */,
+				115FEB57184A813100B4B4A6 /* ChooseYourDestiny.mp3 in Resources */,
 				11C69FD4184A5049008069A6 /* InfoPlist.strings in Resources */,
 				11C69FDD184A5049008069A6 /* Main.storyboard in Resources */,
 			);
@@ -262,7 +289,10 @@
 				11C69FD6184A5049008069A6 /* main.m in Sources */,
 				11C69FE0184A5049008069A6 /* AhmViewController.m in Sources */,
 				11C69FDA184A5049008069A6 /* AhmAppDelegate.m in Sources */,
+				11724491184A742300CC5A2F /* CarColorViewController.m in Sources */,
+				115FEB5C184ABFA300B4B4A6 /* CharacterVC.m in Sources */,
 				110389C3184A66CE0079690C /* GameEngine.m in Sources */,
+				11724494184A755300CC5A2F /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +359,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ahmad Alokush (U534RR243Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ahmad Alokush (U534RR243Q)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -368,7 +399,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ahmad Alokush (U534RR243Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ahmad Alokush (U534RR243Q)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -389,10 +421,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ahmad Alokush (U534RR243Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoadWarrior/RoadWarrior-Prefix.pch";
 				INFOPLIST_FILE = "RoadWarrior/RoadWarrior-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -402,10 +436,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ahmad Alokush (U534RR243Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoadWarrior/RoadWarrior-Prefix.pch";
 				INFOPLIST_FILE = "RoadWarrior/RoadWarrior-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

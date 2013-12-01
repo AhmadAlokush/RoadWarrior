@@ -8,8 +8,7 @@
 
 #import "AhmViewController.h"
 #import "GameEngine.h"
-
-
+#import "CarColorViewController.h"
 
 @implementation AhmViewController
 @synthesize  autocompleteCarMake;
@@ -30,21 +29,56 @@
 //   autocompleteCarModel.scrollEnabled = YES;
 //   autocompleteCarModel.hidden = YES;
 //   [self.view addSubview:autocompleteCarModel];
-    [[GameEngine engine] init];
-    [super viewDidLoad];
+   [super viewDidLoad];
   	// Do any additional setup after loading the view, typically from a nib.
 }
 
-#pragma mark UITextFieldDelegate methods
+
+- (void)didReceiveMemoryWarning
+{
+   [super didReceiveMemoryWarning];
+      // Dispose of any resources that can be recreated.
+}
+
 //
-//- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-//   autocompleteTableView.hidden = NO;
+//- (void)searchAutocompleteEntriesWithSubstring:(NSString *)substring {
 //   
-//   NSString *substring = [NSString stringWithString:textField.text];
-//   substring = [substring stringByReplacingCharactersInRange:range withString:string];
-//   [self searchAutocompleteEntriesWithSubstring:substring];
-//   return YES;
+//      // Put anything that starts with this substring into the autocompleteUrls array
+//      // The items in this array is what will show up in the table view
+//   [autocompleteUrls removeAllObjects];
+//   for(NSString *curString in pastUrls) {
+//      NSRange substringRange = [curString rangeOfString:substring];
+//      if (substringRange.location == 0) {
+//         [autocompleteUrls addObject:curString];
+//      }
+//   }
+//   [autocompleteTableView reloadData];
 //}
+//
+//
+#pragma mark UITextFieldDelegate methods
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+   
+   if (textField == self.txtChooseYourDestiny) {
+      [[GameEngine engine] playSoundEffect:@"ChooseYourDestiny"];
+   }
+   else {
+      [[GameEngine engine] playSoundEffect:@"ColdIsTheVoid"];
+   }
+   
+   return YES;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+   autocompleteCarMake.hidden = NO;
+   autocompleteCarModel.hidden = NO;
+  
+   NSString *substring = [NSString stringWithString:textField.text];
+   substring = [substring stringByReplacingCharactersInRange:range withString:string];
+   [self searchAutocompleteEntriesWithSubstring:substring];
+   return YES;
+}
 //
 //#pragma mark UITableViewDataSource methods
 //
@@ -77,9 +111,11 @@
 //   
 //}
 //
-//- (void)goPressed {
-//   
-//      // Clean up UI
+- (void)goPressed {
+   
+   CarColorViewController *carVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CarColorViewController"];
+   [self.navigationController pushViewController:carVC animated:YES];
+      // Clean up UI
 //   [urlField resignFirstResponder];
 //   autocompleteTableView.hidden = YES;
 //   
@@ -90,17 +126,10 @@
 //   if (![pastUrls containsObject:urlField.text]) {
 //      [pastUrls addObject:urlField.text];
 //   }
-//   
-//      // Push the wev view controller onto the stack
-//   [self.navigationController pushViewController:self.webViewController animated:YES];
-//}
-//
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)goClicked:(id)sender {
+      [self goPressed];
+}
 @end

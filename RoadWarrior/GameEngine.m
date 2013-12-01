@@ -34,6 +34,22 @@
    
 }
 
+- (void)playSoundEffect:(NSString *) SFXName {
+   NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:SFXName ofType:@"mp3"];
+   NSData *myData = [NSData dataWithContentsOfFile:soundFilePath];
+   
+   NSError *error;
+   player = [(AVAudioPlayer*)[AVAudioPlayer alloc] initWithData:myData error:nil];
+   player.numberOfLoops = 0;
+   player.delegate = self;
+   if (player == nil) {
+		NSLog([error debugDescription]);
+   }
+	else {
+         //;[player play];
+   }
+}
+
 - (void)playTheme {
    NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"thememusic" ofType:@"mp3"];
    NSData *myData = [NSData dataWithContentsOfFile:soundFilePath];
@@ -42,11 +58,12 @@
    player = [(AVAudioPlayer*)[AVAudioPlayer alloc] initWithData:myData error:nil];
    player.numberOfLoops = -1; 
    player.delegate = self;
-   if (player == nil)
+   if (player == nil) {
 		NSLog([error debugDescription]);
-	else
+   }
+	else {
 		[player play];
-   
+   }
 }
 
 @end

@@ -18,5 +18,8 @@
 @property (nonatomic, retain) UITableView *autocompleteCarModel;
 
 - (void)searchAutocompleteEntriesWithSubstring:(NSString *)substring;
+- (IBAction)goClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *txtChooseYourDestiny;
+@property (weak, nonatomic) IBOutlet UITextField *txtTheVoid;
 
 @end

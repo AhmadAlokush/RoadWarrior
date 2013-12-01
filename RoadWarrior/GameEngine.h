@@ -16,4 +16,5 @@
 }
 
 + (GameEngine *)engine;
+- (void)playSoundEffect:(NSString *) SFXName;
 @end

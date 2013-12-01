@@ -7,12 +7,14 @@
 //
 
 #import "AhmAppDelegate.h"
+#import "GameEngine.h"
 
 @implementation AhmAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+   [[GameEngine engine] init];
     return YES;
 }
 							
